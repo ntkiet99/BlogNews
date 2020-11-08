@@ -2,6 +2,7 @@ package com.example.blognews.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -47,6 +48,9 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         userEmail = findViewById(R.id.regMail);
         userName = findViewById(R.id.regName);
@@ -148,8 +152,8 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void updateUI() {
-        Intent homeActivity = new Intent(getApplicationContext(), HomeActivity.class);
-        startActivity(homeActivity);
+        Intent navHome = new Intent(getApplicationContext(), NavHome.class);
+        startActivity(navHome);
         finish();
     }
 
@@ -185,4 +189,5 @@ public class RegisterActivity extends AppCompatActivity {
             checkImageChange = false;
         }
     }
+
 }

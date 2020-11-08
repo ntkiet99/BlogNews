@@ -38,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLogin);
         loginProgress = findViewById(R.id.login_progress);
         mAuth = FirebaseAuth.getInstance();
-        HomeActivity = new Intent(this, com.example.blognews.Activities.HomeActivity.class);
+        HomeActivity = new Intent(this, com.example.blognews.Activities.NavHome.class);
         loginPhoto = findViewById(R.id.login_photo);
 
         loginProgress.setVisibility(View.INVISIBLE);
