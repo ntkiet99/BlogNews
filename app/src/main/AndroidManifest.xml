@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BlogNews">
+        <activity android:name=".Activities.PostDetailActivity"></activity>
         <activity
             android:name=".Activities.NavHome"
             android:label="@string/title_activity_nav_home"
@@ -22,10 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.LoginActivity"/>
-        <activity android:name=".Activities.RegisterActivity"
-            />
-
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".Activities.RegisterActivity" />
         <activity android:name=".Activities.HomeActivity" />
     </application>
 
